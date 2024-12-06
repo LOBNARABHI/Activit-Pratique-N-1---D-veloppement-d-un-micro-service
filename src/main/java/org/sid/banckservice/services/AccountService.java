@@ -6,4 +6,6 @@ import org.sid.banckservice.entities.BankAccount;
 
 public interface AccountService {
     public BankAccountResponseDTO addAccount(BankAccountRequestDTO bankAccountDTO);
+
+    boolean deleteAccount(String id);
 }

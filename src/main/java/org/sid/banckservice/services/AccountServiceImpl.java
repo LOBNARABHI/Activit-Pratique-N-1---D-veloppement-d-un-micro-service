@@ -33,4 +33,11 @@ public class AccountServiceImpl implements AccountService {
        BankAccountResponseDTO bankAccountResponseDTO =  accountMapper.fromBankAccount(savedBankAccount);
         return bankAccountResponseDTO;
     }
+
+    @Override
+    public boolean deleteAccount(String id) {
+        bankAccountRepository.deleteById(id);
+        return true;    }
+
+
 }

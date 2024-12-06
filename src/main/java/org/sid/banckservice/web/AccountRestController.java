@@ -6,6 +6,7 @@ import org.sid.banckservice.entities.BankAccount;
 import org.sid.banckservice.mappers.AccountMapper;
 import org.sid.banckservice.repositories.BankAccountRepository;
 import org.sid.banckservice.services.AccountService;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
+//@RepositoryRestResource
 @RequestMapping("/api")
 public class AccountRestController {
     private BankAccountRepository bankAccountRepository;
